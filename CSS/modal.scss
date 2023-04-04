@@ -1,0 +1,51 @@
+@use "palette";
+
+.modal {
+  position: fixed;
+  top: $zerovalue;
+  left: $zerovalue;
+  width: $fullvaluepercent;
+  height: $fullvaluepercent;
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  &__header {
+    background: linear-gradient(to right, #000080, #1084d0);
+    color: $primary-bordertextcolor;
+    padding: $fourpxvalue;
+    display: flex;
+    align-content: space-between;
+  }
+
+  &__title {
+    margin-right: 500px;
+    padding-top: $fivepxvalue;
+  }
+
+  &__image {
+    width: $fiftyvaluepercent;
+    height: $fiftyvaluepercent;
+  }
+
+  &__content {
+    background-color: $secondary-bordertextcolor;
+    height: $fiftyvaluepercent;
+    @include mixin.borders($twopxvalue, $secondary-bordertextcolor, $primary-bordertextcolor);
+  }
+
+  &__body {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: $onehundredpxvalue;
+    background-color: $secondary-bordertextcolor;
+  }
+}
+
+.buttons {
+  background-color: #bdbebd;
+  @include mixin.borders($twopxvalue, $secondary-bordertextcolor, $primary-bordertextcolor);
+  height: $twentyfivepx;
+  width: $twentyfivepx;
+}

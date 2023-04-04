@@ -1,0 +1,17 @@
+@use "./CSS/start.scss";
+@use "./CSS/menu.scss";
+@use "./CSS/desktop.scss";
+@use "./CSS/modal.scss";
+
+* {
+  padding: $zerovalue;
+  margin: $zerovalue;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+};
+
+.bigContainer {
+  display: block;
+};
+
+

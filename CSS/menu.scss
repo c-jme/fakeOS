@@ -1,0 +1,66 @@
+@use "palette";
+
+.menuContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  position: absolute;
+  bottom: 35px;
+  left: $threepxvalue;
+  background-color: #bdbebd;
+  z-index: 10;
+  height: 300px;
+  width: 250px;
+  @include mixin.borders($twopxvalue, $secondary-bordertextcolor, grey);
+  display: none;
+};
+
+.menuSide {
+  height: $fullvaluepercent;
+  background: linear-gradient(to bottom, #000080, #1084d0);
+  display: inline-block;
+  width: $twentyfivepx;
+  bottom: $zerovalue;
+  left: $zerovalue;
+  position: absolute;
+}
+
+.headline {
+  transform: rotate(-90deg);
+  transform-origin: 0% 0%;
+  width: 150%;
+  padding-top: $fourpxvalue;
+  padding-bottom: $threepxvalue;
+  padding-left: 0px;
+  color: $primary-bordertextcolor;
+  position: absolute;
+  left: $zerovalue;
+  bottom: $zerovalue;
+  text-align: left;
+  margin-bottom: -15px;
+}
+
+
+.item {
+  padding-top: $twelvepxvalue;
+  padding-bottom: $twelvepxvalue;
+  padding-left: 50px;
+  padding-right: $seventyvaluepx;
+  font-size: 13px;
+  margin-left: $twentyfivepx;
+  background-size: auto 80%;
+  background-position: 5px 50%;
+  background-repeat: no-repeat;
+
+  &:hover {
+    background-color: #000080;
+    color: $primary-bordertextcolor;
+  }
+}
+
+.more {
+  position: relative;
+  list-style: none;
+}
