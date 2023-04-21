@@ -1,0 +1,209 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bigContainer {
+  display: block;
+}
+
+.startbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 38px;
+  width: 100vw;
+  background-color: #bdbebd;
+  border-top: 2px solid white;
+}
+
+.start {
+  float: left;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  width: 70px;
+  height: 29px;
+  text-align: right;
+  padding: 4px;
+  margin-top: 3px;
+  margin-left: 5px;
+  background-image: url(./asset/w98icon.png);
+  background-size: auto 70%;
+  background-position: 5% 50%;
+  background-repeat: no-repeat;
+}
+.start__Off {
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.start__On {
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.time {
+  display: inline-block;
+  height: 29px;
+  float: right;
+  text-align: center;
+  padding: 4px;
+  margin-top: 2px;
+  margin-right: 5px;
+  border-top: 2px solid grey;
+  border-left: 2px solid grey;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+}
+
+.menuContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  position: absolute;
+  bottom: 35px;
+  left: 3px;
+  background-color: #bdbebd;
+  z-index: 10;
+  height: 300px;
+  width: 250px;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+  border-right: 2px solid grey;
+  border-bottom: 2px solid grey;
+  display: none;
+}
+
+.menuSide {
+  height: 100%;
+  background: linear-gradient(to bottom, #000080, #1084d0);
+  display: inline-block;
+  width: 25px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.headline {
+  transform: rotate(-90deg);
+  transform-origin: 0% 0%;
+  width: 150%;
+  padding-top: 4px;
+  padding-bottom: 3px;
+  padding-left: 0px;
+  color: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: left;
+  margin-bottom: -15px;
+}
+
+.item {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 50px;
+  padding-right: 70px;
+  font-size: 13px;
+  margin-left: 25px;
+  background-size: auto 80%;
+  background-position: 5px 50%;
+  background-repeat: no-repeat;
+}
+.item:hover {
+  background-color: #000080;
+  color: white;
+}
+
+.more {
+  position: relative;
+  list-style: none;
+}
+
+.desktop {
+  height: 100vh;
+  width: 100vw;
+  background-color: #007D7B;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  position: fixed;
+  z-index: -999;
+}
+
+.iconWrap {
+  display: block;
+  padding-top: 10px;
+  width: 20vw;
+}
+.iconWrap > img {
+  padding-left: 20px;
+}
+.iconWrap > p {
+  padding-left: 10px;
+  width: 100px;
+  font-size: 12px;
+  color: white;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.modal__header {
+  background: linear-gradient(to right, #000080, #1084d0);
+  color: #fff;
+  padding: 4px;
+  display: flex;
+  align-content: space-between;
+}
+.modal__title {
+  margin-right: 500px;
+  padding-top: 5px;
+}
+.modal__image {
+  width: 50%;
+  height: 50%;
+}
+.modal__content {
+  background-color: white;
+  height: 50%;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.modal__body {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-top: 100px;
+  background-color: white;
+}
+
+.buttons {
+  background-color: #bdbebd;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  margin-left: 3px;
+  height: 25px;
+  width: 25px;
+}

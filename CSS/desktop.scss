@@ -1,0 +1,31 @@
+@use "palette";
+
+
+.desktop {
+  height: 100vh;
+  width: $maxvw;
+  background-color: #007D7B;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  position: fixed;
+  z-index: -999;
+};
+
+
+.iconWrap {
+  display: block;
+  padding-top: $tenpxvalue;
+  width: 20vw;
+  
+  & > img {
+    padding-left: 20px;
+  }
+
+  & > p {
+    padding-left: $tenpxvalue;
+    width: $onehundredpxvalue;
+    font-size: $twelvepxvalue;
+    color: $secondary-bordertextcolor
+  }
+};

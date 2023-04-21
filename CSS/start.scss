@@ -1,0 +1,48 @@
+@use "palette";
+
+
+.startbar {
+  position: fixed;
+  bottom: $zerovalue;
+  left: $zerovalue;
+  display: flex;
+  justify-content: space-between;
+  height: 38px;
+  width: $maxvw;
+  background-color: #bdbebd;
+  border-top: $twopxvalue solid $secondary-bordertextcolor;
+};
+
+.start {
+  display: inline-block;
+  text-decoration: none;
+  color: $primary-bordertextcolor;
+  width: $seventyvaluepx;
+  height: 29px;
+  text-align: right;
+  padding: $fourpxvalue;
+  margin-top: $threepxvalue;
+  margin-left: $fivepxvalue;
+  background-image: url(./asset/w98icon.png);
+  background-size: auto 70%;
+  background-position: 5% %fiftypercentvalue;
+  background-repeat: no-repeat;
+
+  &__Off {
+    @include mixin.borders($twopxvalue, $secondary-bordertextcolor, $primary-bordertextcolor);
+  }
+
+  &__On {
+    @include mixin.borders($twopxvalue, $primary-bordertextcolor, $secondary-bordertextcolor);
+  }
+};
+
+.time {
+  display: inline-block;
+  height: 29px;
+  text-align: center;
+  padding: $fourpxvalue;
+  margin-top: $threepxvalue;
+  margin-right: $fivepxvalue;
+  @include mixin.borders($twovaluepx, grey, white);
+};

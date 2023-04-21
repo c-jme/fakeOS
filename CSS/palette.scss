@@ -1,0 +1,28 @@
+$primary-bordertextcolor: black;
+$secondary-bordertextcolor: white;
+$absolute: absolute;
+$solid: solid;
+
+
+$maxvw: 100vw;
+$fiftyvaluepercent: 50%;
+$fullvaluepercent: 100%;
+$zerovalue: 0;
+$twopxvalue: 2px;
+$threepxvalue: 3px;
+$fourpxvalue: 4px;
+$fivepxvalue: 5px;
+$tenpxvalue: 10px;
+$twelvepxvalue: 12px;
+$twentyfivepx: 25px;
+$seventyvaluepx: 70px;
+$onehundredpxvalue: 100px;
+
+
+
+@mixin borders($px, $thick: solid, $colour, $colourTwo) {
+  border-left: $px, $thick, $colour;
+  border-top: $px, $thick, $colour;
+  border-right: $px, $thick, $colourTwo;
+  border-left: $px, $thick, $colourTwo;
+};
